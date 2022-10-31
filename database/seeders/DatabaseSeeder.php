@@ -27,20 +27,12 @@ class DatabaseSeeder extends Seeder
         ]);
 
         User::create([
-            'name' => 'Auryno',
-            'email' => 'auryno@gmail.com',
-            'phone' => '082232313626',
+            'name' => 'Tzelginia',
+            'email' => 'tzelginianc@gmail.com',
+            'phone' => '082231464030',
             'role' => 'member',
             'verify' => '1',
             'password' => bcrypt('password')
-        ]);
-
-        Category::create([
-            'name' => 'Framework'
-        ]);
-
-        Category::create([
-            'name' => 'Java'
         ]);
     }
 }
