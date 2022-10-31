@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class RegisterController extends Controller
@@ -24,7 +25,12 @@ class RegisterController extends Controller
         $ValidatedData['password'] = bcrypt($ValidatedData['password']);
 
         User::create($ValidatedData);
+        if (Auth::attempt($ValidatedData)) {
+            $request->session()->regenerate();
+
+            return redirect()->intended('/dashboard');
+        }
         // $request->session()->flash('success','Registrasi berhasil, silahkan Login');
-        return redirect('/login')->with('success','Registrasi berhasil');
+        return redirect('/pembayaran')->with('success','Registrasi berhasil');
     }
 }
