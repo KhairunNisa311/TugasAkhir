@@ -11,6 +11,12 @@ class Kelas extends Model
     protected $primaryKey = 'id';
 
     protected $fillable = [
-        'name'
+        'name',
+        'harga'
     ];
+
+    public function mapel()
+    {
+        return $this->hasMany(Mapel::class);
+    }
 }

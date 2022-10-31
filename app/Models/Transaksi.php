@@ -16,7 +16,7 @@ class Transaksi extends Model
         'kelas_id',
         'verify',
         'mapel',
-        'progres'
+        'total_harga'
     ];
 
     public function course(){
