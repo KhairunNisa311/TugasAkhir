@@ -17,22 +17,8 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        User::create([
-            'name' => 'Admin',
-            'email' => 'admin@gmail.com',
-            'phone' => '082232313626',
-            'role' => 'admin',
-            'verify' => '1',
-            'password' => bcrypt('password')
-        ]);
-
-        User::create([
-            'name' => 'Tzelginia',
-            'email' => 'tzelginianc@gmail.com',
-            'phone' => '082231464030',
-            'role' => 'member',
-            'verify' => '1',
-            'password' => bcrypt('password')
-        ]);
+        $this->call(KelasSeeder::class);
+        $this->call(MapelSeeder::class);
+        $this->call(UserSeeder::class);
     }
 }
