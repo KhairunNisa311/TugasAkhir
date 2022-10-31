@@ -18,9 +18,9 @@ class CreateTransaksisTable extends Migration
             $table->timestamps();
             $table->string('bukti')->nullable();
             $table->foreignId('user_id');
-            $table->foreignId('course_id');
+            $table->foreignId('kelas_id');
+            $table->foreignId('mapel');
             $table->integer('verify')->default(0);
-            $table->integer('progres')->default(0);
         });
     }
 
