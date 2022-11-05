@@ -21,13 +21,13 @@
                       
                     </div>
                     <div>
-                      <p class="statistics-title">Category</p>
-                      <h4 class="rate-percentage">{{ $category->count() }} Categories</h4>
+                      <p class="statistics-title">Kelas</p>
+                      <h4 class="rate-percentage">{{ $kelas->count() }} Kelas</h4>
                       
                     </div>
                     <div class="d-none d-md-block">
-                      <p class="statistics-title">Course</p>
-                      <h4 class="rate-percentage">{{ $course->count() }} Courses</h4>
+                      <p class="statistics-title">Mapel</p>
+                      <h4 class="rate-percentage">{{ $mapel->count() }} Mapel</h4>
                       
                     </div>
                     <div class="d-none d-md-block">

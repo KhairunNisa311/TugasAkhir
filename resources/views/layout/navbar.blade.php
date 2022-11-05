@@ -7,6 +7,7 @@
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<<<<<<< HEAD
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                 <a class= "nav-link {{ Request::is('course') ? 'active' : '' }} "  href="/course"><i class="bi bi-book-half mx-2"></i>Courses</a>
@@ -28,6 +29,9 @@
                   </li> --}}
                
             </ul>
+=======
+           
+>>>>>>> 33d101aa60921f92ff0518570498586e54e14293
 
 
             <ul class="navbar-nav ms-auto">
