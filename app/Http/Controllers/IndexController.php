@@ -3,16 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Category;
+use App\Models\Mapel;
 
 class IndexController extends Controller
 {
 
     public function index()
     {
-        $category = Category::all();
+        $mapel = Mapel::all();
         return view('index', [
-            'category' => $category 
+            'mapel' => $mapel
         ]);
     }
 
