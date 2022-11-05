@@ -17,6 +17,7 @@ use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\DashboardCourseController;
 use App\Http\Controllers\DashboardMateriController;
 use App\Http\Controllers\DashboardCategoryController;
+use App\Http\Controllers\PembayaranController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,6 +48,8 @@ Route::get('/block', [LoginController::class, 'block']);
 Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
 
 Route::post('/register', [RegisterController::class, 'store']);
+
+Route::get('/pembayaran', [PembayaranController::class, 'index']);
 
 Route::resource('/admin/member', DashboardUserController::class)->middleware('checkRole:admin');
 Route::resource('/admin/user', DashboardAdminController::class)->middleware('checkRole:admin');

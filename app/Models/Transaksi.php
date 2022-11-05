@@ -19,8 +19,8 @@ class Transaksi extends Model
         'total_harga'
     ];
 
-    public function course(){
-        return $this->belongsTo(Course::class, 'kelas_id');
+    public function kelas(){
+        return $this->belongsTo(Kelas::class, 'kelas_id');
     }
 
     public function user(){

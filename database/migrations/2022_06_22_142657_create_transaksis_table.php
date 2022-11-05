@@ -21,7 +21,7 @@ class CreateTransaksisTable extends Migration
             $table->foreignId('kelas_id');
             $table->foreignId('mapel');
             $table->integer('verify')->default(0);
-            $table->integer('total_harga');
+            $table->integer('total_harga')->nullable();
         });
     }
 

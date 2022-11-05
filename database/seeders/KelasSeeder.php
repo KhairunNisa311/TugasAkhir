@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
+use App\Models\Kelas;
 
 class KelasSeeder extends Seeder
 {
@@ -14,19 +14,54 @@ class KelasSeeder extends Seeder
      */
     public function run()
     {
-        $kelas = [
-            ['name' => 'TK',],
-            ['name' => 'SD Kelas 1',],
-            ['name' => 'SD Kelas 2',],
-            ['name' => 'SD Kelas 3',],
-            ['name' => 'SD Kelas 4',],
-            ['name' => 'SD Kelas 5',],
-            ['name' => 'SD Kelas 6',],
-            ['name' => 'SMP Kelas 7',],
-            ['name' => 'SMP Kelas 8',],
-            ['name' => 'SMP Kelas 9',],
-        ];
+        Kelas::create([
+            'name' => 'TK',
+            'harga' => '25000',
+        ]);
 
-        DB::table('kelas')->insert($kelas);
+        Kelas::create([
+            'name' => 'SD Kelas 1',
+            'harga' => '40000',
+        ]);
+
+        Kelas::create([
+            'name' => 'SD Kelas 2',
+            'harga' => '40000',
+        ]);
+        
+        Kelas::create([
+            'name' => 'SD Kelas 3',
+            'harga' => '40000',
+        ]);
+        
+        Kelas::create([
+            'name' => 'SD Kelas 4',
+            'harga' => '40000',
+        ]);
+        
+        Kelas::create([
+            'name' => 'SD Kelas 5',
+            'harga' => '40000',
+        ]);
+        
+        Kelas::create([
+            'name' => 'SD Kelas 6',
+            'harga' => '40000',
+        ]);
+
+        Kelas::create([
+            'name' => 'SMP Kelas 7',
+            'harga' => '50000',
+        ]);
+
+        Kelas::create([
+            'name' => 'SMP Kelas 8',
+            'harga' => '50000',
+        ]);
+
+        Kelas::create([
+            'name' => 'SMP Kelas 9',
+            'harga' => '50000',
+        ]);
     }
 }
