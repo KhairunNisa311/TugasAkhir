@@ -15,7 +15,10 @@ class IndexController extends Controller
     {
 
         return view('index');
-
+        $mapel = Mapel::all();
+        return view('index', [
+            'mapel' => $mapel
+        ]);
     }
 
 }

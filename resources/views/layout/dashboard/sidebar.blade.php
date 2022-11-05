@@ -47,11 +47,11 @@
           </ul>
         </div>
       </li>
-      <li class="nav-item nav-category">Courses</li>
+      <li class="nav-item nav-category">Kelas</li>
       <li class="nav-item">
         <a class="nav-link" href="/admin/category">
           <i class="menu-icon mdi mdi-layers-outline"></i>
-          <span class="menu-title">Category</span>
+          <span class="menu-title">Tugas</span>
         </a>
       </li>
       {{-- <li class="nav-item">
@@ -69,7 +69,7 @@
       <li class="nav-item">
         <a class="nav-link" data-bs-toggle="collapse" href="#course" aria-expanded="false" aria-controls="charts">
           <i class="menu-icon mdi mdi-book-multiple"></i>
-          <span class="menu-title">Course</span>
+          <span class="menu-title">Modul</span>
           <i class="menu-arrow"></i>
         </a>
         <div class="collapse" id="course">
