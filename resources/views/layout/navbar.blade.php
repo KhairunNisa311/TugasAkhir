@@ -11,7 +11,7 @@
                 <li class="nav-item">
                 <a class= "nav-link {{ Request::is('course') ? 'active' : '' }} "  href="/course"><i class="bi bi-book-half mx-2"></i>Courses</a>
                 </li>
-                <li class="nav-item dropdown">
+                {{-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Category
                     </a>
@@ -19,13 +19,13 @@
                         <form action="/course" class="d-inline">
                             @csrf
                             @foreach ($category as $c)
-                        {{-- <li><a class="dropdown-item" href="#">Action</a></li> --}}
+                        <li><a class="dropdown-item" href="#">Action</a></li>
                         <input type="hidden" name="search" id="search" value="{{ $c->id }}">
                         <li> <button type="submit" class="dropdown-item" >{{ $c->name }}</button></li>
                         @endforeach
                         </form>
                     </ul>
-                  </li>
+                  </li> --}}
                
             </ul>
 
