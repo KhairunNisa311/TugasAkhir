@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Tugas extends Model
 {
-    protected $table = 'pertemuans';
+    protected $table = 'tugas';
     protected $primaryKey = 'id';
 
     protected $fillable = [
